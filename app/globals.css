@@ -77,3 +77,61 @@ ul li a:hover {
 .brand:hover {
   --_p: 100%
 }
+
+/* About Page */
+
+div h1{
+  font-weight: 700;
+  margin: auto;
+  margin-left: 30px;
+}
+
+.text-zone {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.carbon-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 80%;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+
+  background-color: #e3e3e350;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+@keyframes floating {
+  0% {
+      transform: translate(0, 0px);
+  }
+
+  50% {
+      transform: translate(0, 15px);
+  }
+
+  100% {
+      transform: translate(0, -0px);
+  }
+}
+
+img {
+  margin: 1rem;
+  scale: 0.9;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+img:hover {
+  scale: 1;
+  filter: drop-shadow(5px 5px 50px #1db95460);
+}
