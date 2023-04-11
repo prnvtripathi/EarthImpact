@@ -1,9 +1,9 @@
 "use client"
+
 import Image from 'next/image'
 import '../globals.css'
 import { Montserrat } from "next/font/google"
 import carbon from '../assets/carbon.jpg'
-import PieChart from './chart'
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -39,10 +39,6 @@ export default function About() {
                     </p>
                 </div>
                 <Image src={carbon} alt='' width={500} />
-            </div>
-
-            <div>
-                <PieChart />
             </div>
         </div>
     )
