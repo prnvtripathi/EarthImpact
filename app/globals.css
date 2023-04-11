@@ -1,8 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
   background-color: #242424;
   color: #e3e3e3;
+}
+
+nav {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1db95490;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+ul li {
+  list-style: none;
+  margin: auto 2rem;
+}
+
+ul li a {
+  color: #e3e3e3;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all ease-in-out 0.3s;
+}
+
+ul li a:hover {
+  background-color: #e3e3e390;
+  padding: 0.3rem 0.7rem;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.github-link {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #e3e3e370;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.github-link:hover {
+  scale: 1.1;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+
+  --s: 0.1em;
+  /* the thickness of the line */
+  --c: #e3e3e3;
+  /* the color */
+
+  color: #0000;
+  padding-bottom: var(--s);
+  background:
+    linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+.brand:hover {
+  --_p: 100%
 }
