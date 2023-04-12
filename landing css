@@ -188,7 +188,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-.team_img_wrapper:hover{
+.team_img_wrapper:hover {
   scale: 1;
 }
 
@@ -243,13 +243,14 @@ button {
   color: #1DB954;
   line-height: 25px;
   font-size: 15.5px;
+  user-select: none;
 }
 
 
 
 /* About Section Styles */
 .about {
-  padding: 50px 0;
+  padding: 50px 5vw;
 }
 
 .about-content {
@@ -276,7 +277,7 @@ button {
 
 .about-image img:hover {
   scale: 1;
-  filter: drop-shadow(#242424 1px 1px 5px) ;
+  filter: drop-shadow(#242424 1px 1px 5px);
 }
 
 .about-text {
@@ -310,9 +311,9 @@ button {
 /* FOOTER */
 
 footer {
-  background-color: var(--primary-color);
+  background-color: black;
   padding: 30px 0;
-  color: white;
+  color: var(--primary-color)
 }
 
 .container {
@@ -331,7 +332,7 @@ footer {
 .links a {
   display: inline-block;
   margin: 0 15px;
-  color: #ffffff;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -357,11 +358,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   .links,
   .social-icons {
     margin-top: 15px;
     text-align: center;
   }
+
   .links a,
   .social-icons a {
     display: block;
