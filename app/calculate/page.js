@@ -22,14 +22,14 @@ const CarbonFootprintCalculator = () => {
     const [carbonFootprint, setCarbonFootprint] = useState(0);
     const [currentStep, setCurrentStep] = useState(1);
     const [transportationData, setTransportationData] = useState({
-        milesDriven: 0,
+        kilometersDriven: 0,
         mpg: 0,
-        milesPerWeek: 0
+        kilometersPerWeek: 0
     });
     const [housingData, setHousingData] = useState({
         electricityUsage: 0,
         gasUsage: 0,
-        squareFootage: 0
+        squareMeters: 0
     });
     const [foodData, setFoodData] = useState({
         meatConsumption: 0,
@@ -57,34 +57,35 @@ const CarbonFootprintCalculator = () => {
     const calculateCarbonFootprint = () => {
         // Calculate carbon footprint based on user input data
         return (
-            transportationData.milesDriven * transportationData.milesPerWeek * 52 * 0.000825 +
-            housingData.electricityUsage * 0.00000000016666667 +
-            housingData.gasUsage * 0.00000000013095238 +
-            housingData.squareFootage * 0.00000000028846154 +
+            transportationData.kilometersDriven * transportationData.kilometersPerWeek * 52 * 0.00000211888 +
+            housingData.electricityUsage * 0.00000004166667 +
+            housingData.gasUsage * 0.00000003263098 +
+            housingData.squareMeters * 0.00000000283333 +
             (foodData.meatConsumption + foodData.dairyConsumption + foodData.produceConsumption) * 0.0025 +
-            miscData.airTravel * 0.000000040185 +
-            miscData.wasteProduction * 0.0000000011
+            miscData.airTravel * 0.000000064747 +
+            miscData.wasteProduction * 0.00000000030103
         );
     };
+
 
     const renderStep = () => {
         switch (currentStep) {
             case 1:
                 return (
                     <div>
-                        <label>Miles driven per week:</label>
+                        <label>Kilometers driven per week:</label>
                         <input
                             type="number"
-                            value={transportationData.milesPerWeek}
+                            value={transportationData.kilometersPerWeek}
                             onChange={(e) =>
                                 setTransportationData({
                                     ...transportationData,
-                                    milesPerWeek: e.target.value
+                                    kilometersPerWeek: e.target.value
                                 })
                             }
                         />
                         <br />
-                        <label>Miles per gallon:</label>
+                        <label>Kilometeres per litre:</label>
                         <input
                             type="number"
                             value={transportationData.mpg}
@@ -96,14 +97,14 @@ const CarbonFootprintCalculator = () => {
                             }
                         />
                         <br />
-                        <label>Miles driven per year:</label>
+                        <label>Kilometers driven per year:</label>
                         <input
                             type="number"
-                            value={transportationData.milesDriven}
+                            value={transportationData.kilometersDriven}
                             onChange={(e) =>
                                 setTransportationData({
                                     ...transportationData,
-                                    milesDriven: e.target.value
+                                    kilometersDriven: e.target.value
                                 })
                             }
                         />
@@ -124,7 +125,7 @@ const CarbonFootprintCalculator = () => {
                             }
                         />
                         <br />
-                        <label>Natural gas usage in therms per year:</label>
+                        <label>Natural gas usage in units per year:</label>
                         <input
                             type="number"
                             value={housingData.gasUsage}
@@ -136,14 +137,14 @@ const CarbonFootprintCalculator = () => {
                             }
                         />
                         <br />
-                        <label>Square footage of your home:</label>
+                        <label>Area of your home in squaremeters:</label>
                         <input
                             type="number"
-                            value={housingData.squareFootage}
+                            value={housingData.squareMeters}
                             onChange={(e) =>
                                 setHousingData({
                                     ...housingData,
-                                    squareFootage: e.target.value
+                                    squareMeters: e.target.value
                                 })
                             }
                         />
@@ -192,7 +193,7 @@ const CarbonFootprintCalculator = () => {
             case 4:
                 return (
                     <div>
-                        <label>Number of air miles flown per year:</label>
+                        <label>Number of air Kilometers flown per year:</label>
                         <input
                             type="number"
                             value={miscData.airTravel}
@@ -204,7 +205,7 @@ const CarbonFootprintCalculator = () => {
                             }
                         />
                         <br />
-                        <label>Waste produced in pounds per week:</label>
+                        <label>Waste produced in kgs per week:</label>
                         <input
                             type="number"
                             value={miscData.wasteProduction}
@@ -223,21 +224,22 @@ const CarbonFootprintCalculator = () => {
     };
 
     return (
-        <div>
-            <h1>Carbon Footprint Calculator</h1>
-            <p>
-                Step {currentStep} of {steps.length}
-            </p>
-            {renderStep()}
-            <button disabled={currentStep === 1} onClick={handleBack}>
-                Back
-            </button>
-            <button onClick={handleNext}>
-                {currentStep === steps.length ? "Calculate" : "Next"}
-            </button>
+        <div className={montserrat.className} style={{ textAlign: 'center' }}>
+            <div className='form-box'>
+                <h1>Carbon Footprint Calculator</h1>
+                <div className='progress-bar' style={{ width: currentStep === 1 ? "25%" : currentStep === 2 ? "50%" : currentStep === 3 ? "75%" : "100%" }}></div>
+                {renderStep()}
+                <button disabled={currentStep === 1} onClick={handleBack}>
+                    Back
+                </button>
+                <button onClick={handleNext}>
+                    {currentStep === steps.length ? "Calculate" : "Next"}
+                </button>
 
-            <h3>Your carbon footprints are: {carbonFootprint.toFixed(2)}</h3>
+                <h3 style={{ color: carbonFootprint < 2721 ? "green" : carbonFootprint >= 2721 && carbonFootprint < 7257.5 ? "yellow" : "red" }}>{carbonFootprint ? `Your carbon footprints are: ${carbonFootprint.toFixed(2)}` : ""}</h3>
+            </div>
         </div>
+
     );
 };
 
