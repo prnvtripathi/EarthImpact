@@ -1,5 +1,3 @@
-"use client"
-
 import Image from 'next/image'
 import '../globals.css'
 import { Montserrat } from "next/font/google"
