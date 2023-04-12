@@ -1,7 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express();
-const fs = require('fs');
 
 fs.readFile('data.json', 'utf8', (err, data) => {
   if (err) throw err;
@@ -19,7 +17,7 @@ app.post('/submit', (req, res) => {
   const email = req.body.email;
   const message = req.body.message;
 
-  
+
   console.log(`Received form submission: ${name}, ${email}, ${message}`);
 
   res.send('Thanks for submitting the form!');
