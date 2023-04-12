@@ -8,7 +8,7 @@ fs.readFile('data.json', 'utf8', (err, data) => {
   const jsonData = JSON.parse(data);
   console.log(jsonData.name);
 });
-
+const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
