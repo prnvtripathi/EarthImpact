@@ -1,9 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const app = express();
+const fs = require('fs');
 
-
+fs.readFile('data.json', 'utf8', (err, data) => {
+  if (err) throw err;
+  const jsonData = JSON.parse(data);
+  console.log(jsonData.name);
+});
+const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
