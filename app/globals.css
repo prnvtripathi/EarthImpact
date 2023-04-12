@@ -263,8 +263,69 @@ label {
   box-shadow: #00000050 1px 1px 12px;
 }
 
-@media screen and (max-width: 700px) {
-  .accordion {
-    width: 90%;
-  }
+
+/* Contact page */
+
+.contact-heading {
+  text-align: center;
+  margin: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  width: 35%;
+  height: auto;
+  background-color: #bdbdbd70;
+  border-radius: 20px;
+  box-shadow: #00000050 1px 1px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top {
+  background-color: #1db95470;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.card img {
+  margin: 1rem;
+  width: 15%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  margin: 0.5rem auto;
 }
