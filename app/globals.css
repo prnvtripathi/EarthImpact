@@ -217,3 +217,54 @@ label {
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
+
+/* Accordian in Save */
+
+.save-heading {
+  text-align: center;
+  margin: auto;
+}
+
+.accordion {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  font-size: 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 1rem;
+  border-bottom: #1db954 solid 4px;
+  box-shadow: #00000050 1px 1px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-title:hover {
+  background-color: #1db95470;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  margin: auto;
+  width: 95%;
+  background-color: #bdbdbd70;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  border-bottom: #00000050 solid 4px;
+  box-shadow: #00000050 1px 1px 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .accordion {
+    width: 90%;
+  }
+}
