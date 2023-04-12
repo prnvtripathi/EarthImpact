@@ -1,4 +1,4 @@
-import Avatar from "./Avatar";
+import Avatar from "./avatar";
 import Details from "./details";
 
 function Card(props) {
