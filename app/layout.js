@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           </div>
           <ul>
             <li><Link href='/calculate' className='nav-links'>Calculate</Link></li>
-            <li><Link href='/about' className='nav-links'>About</Link></li>
+            <li><Link href='/save' className='nav-links'>Save</Link></li>
             <li><Link href='/contact' className='nav-links'>Contact</Link></li>
           </ul>
           <Link className='github-link' href='https://github.com/prnvtripathi/carbon-check'><FaGithub /> Github</Link>
