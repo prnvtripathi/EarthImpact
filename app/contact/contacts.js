@@ -28,8 +28,8 @@ const contacts = [
         name: "Vishal Pandey",
         imgURL:
           "https://github.com/VishaaLPandey.png",
-        twitter: "@_Vis__haL_",
-        email: "vishalpandey@gmail.com"
+        twitter: "@iVishal_P",
+        email: "vishalpandey.cr07@gmail.com"
       }
   ];
   
