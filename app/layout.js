@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
             <Link href='/' className='brand'>EarthImpact</Link>
           </div>
           <ul>
-            <li><Link href='/calculate' className='nav-links'>Calculate</Link></li>
-            <li><Link href='/save' className='nav-links'>Save</Link></li>
+            <li><Link href='/calculate' className='nav-links'>Estimate</Link></li>
+            <li><Link href='/save' className='nav-links'>Preventions</Link></li>
             <li><Link href='/contact' className='nav-links'>Contact</Link></li>
           </ul>
           <Link className='github-link' href='https://github.com/prnvtripathi/EarthImpact'><FaGithub /> Github</Link>
