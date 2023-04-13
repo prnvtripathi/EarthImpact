@@ -134,23 +134,6 @@ button:hover {
   color: #1db954;
 }
 
-button.unit-change {
-  background-color: #00000015;
-  color: #1db954;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  border: none;
-  margin: 1rem 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-button.unit-change:hover {
-  background-color: #1db954;
-  color: #e3e3e3;
-}
-
 input {
   background-color: #00000015;
   color: #1db954;
@@ -225,6 +208,11 @@ label {
   border-radius: 20px;
   border-bottom: #00000050 solid 4px;
   box-shadow: #00000050 1px 1px 12px;
+}
+
+.arrow-head{
+  font-weight: 900;
+  font-size: large;
 }
 
 
@@ -520,7 +508,6 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .about-image {

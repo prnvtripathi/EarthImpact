@@ -2,6 +2,7 @@ import './globals.css'
 import Picture1 from './assets/Picture1.jpg'
 import pic2 from './assets/pic2.jpg'
 import pic3 from './assets/pic3.jpg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
             </div>
             <div className="grid-item-2">
               <div className="team_img_wrapper">
-                <img src={Picture1} alt="team-img" />
+                <Image src={Picture1} alt="team-img" />
               </div>
             </div>
           </div>
@@ -43,7 +44,7 @@ export default function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <img src={pic2} alt="About Us Image" />
+              <Image src={pic2} alt="About Us Image" />
             </div>
             <div className="about-text">
               <h2>About Earth Impact</h2>
@@ -65,7 +66,7 @@ export default function Home() {
                 Lowering individual carbon footprints from 16 tons to 2 tons doesn't happen overnight! By making small changes to our actions, like eating less meat, taking fewer connecting flights and line drying our clothes, we </p>
             </div>
             <div className="about-image">
-              <img src={pic3} alt="Carbon Footprint" />
+              <Image src={pic3} alt="Carbon Footprint" />
             </div>
           </div>
         </div>
