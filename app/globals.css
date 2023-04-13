@@ -67,16 +67,16 @@ ul li a:hover {
 
   color: #0000;
   padding-bottom: var(--s);
-  background:
-    linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+  background: linear-gradient(90deg, var(--c) 50%, #1db954 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   transition: 0.5s;
 }
 
 .brand:hover {
-  --_p: 100%
+  --_p: 100%;
 }
 
 /* About Page */
@@ -86,7 +86,6 @@ div h1 {
   margin: auto;
   margin-left: 30px;
 }
-
 
 img {
   margin: 1rem;
@@ -210,11 +209,10 @@ label {
   box-shadow: #00000050 1px 1px 12px;
 }
 
-.arrow-head{
+.arrow-head {
   font-weight: 900;
   font-size: large;
 }
-
 
 /* Contact page */
 
@@ -282,8 +280,22 @@ label {
   margin: 0.5rem auto;
 }
 
+.twitter-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #1da1f2;
+  transition: all 0.3s ease-in-out;
+}
+
+.twitter-link:hover {
+  color: #000;
+  text-shadow: #1db954 1px 1px 16px;
+  transform: translateY(-3px);
+}
+
 :root {
-  --primary-color: #1DB954;
+  --primary-color: #1db954;
   --link-color: #506690;
   --btn-hover-color: #159341;
   --lg-heading: #000000;
@@ -300,12 +312,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 
 /* ==== CONTAINER ==== */
 .container {
@@ -318,8 +324,6 @@ button {
     margin: 0 auto;
   }
 }
-
-
 
 /* ====  WRAPPER ==== */
 .wrapper {
@@ -415,13 +419,13 @@ button {
   font-weight: 500;
   letter-spacing: 0;
   background-color: #ffffff;
-  color: #1DB954;
+  color: #1db954;
   box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
-  border: 1px solid #1DB954;
+  border: 1px solid #1db954;
 }
 
 .documentation_btn:hover {
-  background-color: #1DB954;
+  background-color: #1db954;
   color: #ffffff;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
@@ -471,7 +475,7 @@ button {
 .icon svg {
   width: 30px;
   height: 30px;
-  color: #1DB954;
+  color: #1db954;
 }
 
 .featured_info {
@@ -491,13 +495,11 @@ button {
   width: 100%;
   margin-top: 7px;
   font-weight: 400;
-  color: #1DB954;
+  color: #1db954;
   line-height: 25px;
   font-size: 15.5px;
   user-select: none;
 }
-
-
 
 /* About Section Styles */
 .about {
@@ -513,13 +515,12 @@ button {
 .about-image {
   flex: 0 0 40%;
   padding-right: 50px;
-
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #1DB954;
+  border: 2px solid #1db954;
   scale: 0.95;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
@@ -537,7 +538,6 @@ button {
 .about h2 {
   margin: 0 0 20px 3vw;
   color: var(--primary-color);
-
 }
 
 .about p {
@@ -565,7 +565,7 @@ footer {
   background-color: #242424;
   padding: 30px 0;
   margin: auto;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .container {
@@ -595,7 +595,7 @@ footer {
   scale: 1.6;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
   color: var(--btn-hover-color);
 }
 
@@ -618,8 +618,6 @@ footer {
   }
 }
 
-
-
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
   .toggle_btn {
@@ -635,7 +633,6 @@ footer {
   .logo h2 {
     font-size: 23px;
   }
-
 
   .wrapper {
     padding: 0 0.7rem;
