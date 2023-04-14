@@ -5,12 +5,21 @@ import { Inter } from 'next/font/google'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import logoWhite from './assets/logoWhite.png'
 import Image from 'next/image'
+// import { useState } from 'react';
+
 
 const inter = Inter({
   subsets: ['latin']
 })
 
 export default function RootLayout({ children }) {
+
+  // const [activeLink, setActiveLink] = useState('Home');
+
+  // const handleLinkClick = (event) => {
+  //   setActiveLink(event.target.textContent);
+  // };
+
   return (
     <html lang="en">
       <body>
@@ -19,7 +28,7 @@ export default function RootLayout({ children }) {
             <Link href='/' className='brand'>EarthImpact</Link>
           </div>
           <ul>
-            <li><Link href='/calculate' className='nav-links'>Estimate</Link></li>
+            <li><Link href='/calculate' className="nav-links">Estimate</Link></li>
             <li><Link href='/save' className='nav-links'>Preventions</Link></li>
             <li><Link href='/contact' className='nav-links'>Contact</Link></li>
           </ul>
