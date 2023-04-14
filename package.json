@@ -11,7 +11,7 @@
   "dependencies": {
     "chart.js": "^4.2.1",
     "express": "^4.18.2",
-    "next": "13.3.0",
+    "next": "^13.3.0",
     "next-auth": "^4.22.0",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
