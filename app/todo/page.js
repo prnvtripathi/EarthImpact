@@ -7,17 +7,9 @@ function TodoList() {
     const [selectedOption, setSelectedOption] = useState('')
     const [newXP, setXP] = useState(0);
 
-    //   const handleInputChange = (event) => {
-    //     setNewTodo(event.target.value);
-    //   };
-    // todos = [
-    //     "drive less",
-    //     "car pool",
-    //     "fly less"
-    // ]
     const handleSubmit = (event) => {
         event.preventDefault();
-        setTodos([...todos, newTodo]);
+        setTodos([...todos, newTodos]);
         setNewTodo("");
     };
 
