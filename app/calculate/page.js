@@ -1,7 +1,6 @@
 "use client"
 
 import '../globals.css'
-import Head from 'next/head'
 import { Montserrat } from 'next/font/google'
 import { useState } from 'react'
 

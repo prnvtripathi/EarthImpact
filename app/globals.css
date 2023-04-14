@@ -68,8 +68,7 @@ ul li a:hover {
 
   color: #0000;
   padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, #1db954 0)
-      calc(100% - var(--_p, 0%)) / 200% 100%,
+  background: linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%)) / 200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
@@ -723,4 +722,64 @@ footer {
   .featured_info span {
     font-size: 19px;
   }
+}
+
+.todo {
+  background-color: #b4b4b4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+}
+
+.todo-list {
+  border: #00000050 2px solid;
+  padding: 0.5rem;
+  border-radius: 24px;
+}
+
+.todo-list button {
+  margin: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.todo-items {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+select {
+  width: 25rem;
+  border-radius: 24px;
+  border: #1db954 2px solid;
+  background-color: #00000010;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+select:focus {
+  outline: none;
+}
+
+.todo-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-headings h2 {
+  margin: 0 2rem;
+}
+
+.done-tasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
