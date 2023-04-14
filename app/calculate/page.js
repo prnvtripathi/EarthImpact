@@ -1,6 +1,7 @@
 "use client"
 
 import '../globals.css'
+import Head from 'next/head'
 import { Montserrat } from 'next/font/google'
 import { useState } from 'react'
 
@@ -225,6 +226,9 @@ const CarbonFootprintCalculator = () => {
 
     return (
         <div className={montserrat.className} style={{ textAlign: 'center' }}>
+            <Head>
+                <title>Calculate your carbon footprints</title>
+            </Head>
             <div className='form-box'>
                 <h1>Carbon Footprint Calculator</h1>
                 <div className='progress-bar' style={{ width: currentStep === 1 ? "25%" : currentStep === 2 ? "50%" : currentStep === 3 ? "75%" : "100%" }}></div>
