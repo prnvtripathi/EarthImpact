@@ -2,7 +2,9 @@ import Link from 'next/link'
 import './globals.css'
 import './page.module.css'
 import { Inter } from 'next/font/google'
-import {FaGithub} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import logoWhite from './assets/logoWhite.png'
+import Image from 'next/image'
 
 const inter = Inter({
   subsets: ['latin']
@@ -14,16 +16,38 @@ export default function RootLayout({ children }) {
       <body>
         <nav className={inter.className}>
           <div className='brand-container'>
-            <Link href='/' className='brand'>CarbonCheck</Link>
+            <Link href='/' className='brand'>EarthImpact</Link>
           </div>
           <ul>
-            <li><Link href='/calculate' className='nav-links'>Calculate</Link></li>
-            <li><Link href='/about' className='nav-links'>About</Link></li>
+            <li><Link href='/calculate' className='nav-links'>Estimate</Link></li>
+            <li><Link href='/save' className='nav-links'>Preventions</Link></li>
             <li><Link href='/contact' className='nav-links'>Contact</Link></li>
           </ul>
-          <Link className='github-link' href='https://github.com/prnvtripathi/carbon-check'><FaGithub /> Github</Link>
+          <Link className='github-link' href='https://github.com/prnvtripathi/EarthImpact'><FaGithub /> Github</Link>
         </nav>
         {children}
+
+        <footer>
+          <div className="container">
+            <div className="logo">
+              <Image src={logoWhite} alt="Earth Impact Logo" width={200}  height={100}/>
+            </div>
+            <div className="links">
+              <a href="#">GitHub</a>
+              <a href="#">Log in/Sign Up</a>
+              <a href="#">Vercel</a>
+              <a href="#">Wikipidia</a>
+            </div>
+            <div className="social-icons">
+              <a href="#"><FaGithub /></a>
+              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaLinkedin /></a>
+            </div>
+            <div className="copyright">
+              &copy; 2023 Earth Impact. All rights reserved.
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   )
