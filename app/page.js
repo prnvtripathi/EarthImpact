@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { Montserrat } from 'next/font/google'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import LineChart from './chart';
 
 
 const montserrat = Montserrat({
@@ -16,13 +17,35 @@ const montserrat = Montserrat({
   subsets: ['latin'],
 })
 
+const data = {
+  labels: ['1858', '1880', '1900', '1920', '1940', '1960', '1980' , '2000' , '2021'],
+  datasets: [
+    {
+      label: 'Per capita CO₂ emissions Dataset',
+      data: [0.01, 0.02, 0.04, 0.11, 0.13, 0.25, 0.42, 0.92, 1.93],
+      fill: false,
+      borderColor: '#ff0000',
+      tension: 0.1,
+    },
+  ],
+};
+
+const options = {
+  scales: {
+    y: {
+      beginAtZero: true,
+    },
+  },
+  maintainAspectRatio: true,
+};
+
+
 const Home = () => {
 
   const { ref, inView } = useInView({
     threshold: 0.7, // Trigger when the element is 70% in view
     triggerOnce: true // Trigger only once
   });
-
 
 
   return (
@@ -75,6 +98,9 @@ const Home = () => {
         </div>
       </div>
 
+      <div className='chart'>
+        <LineChart data={data} options={options}  width={800} height={600}/>
+      </div>
 
       <hr className="featurette-divider" />
 
