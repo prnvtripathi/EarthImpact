@@ -61,10 +61,10 @@ const Home = () => {
       <hr className="featurette-divider" />
 
       <section>
-        <div className="content">
+        {/* <div className="content">
           <h2>Statistics</h2>
           <h2>Statistics</h2>
-        </div>
+        </div> */}
 
 
         <div className='counter-container'>
@@ -282,8 +282,9 @@ const Home = () => {
 
       </div>
       <hr className="featurette-divider" />
+ 
 
-      <div className="jumbotron">
+      {/* <div className="jumbotron">
         <div className="container">
 
           <div>
@@ -300,7 +301,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
 
