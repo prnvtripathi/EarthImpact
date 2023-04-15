@@ -2,11 +2,14 @@ body {
   overflow-x: hidden;
   color: #242424;
   background-color: #e3e3e3;
+  display: flexbox;
+  font-size: large;
 }
 
 nav {
-  margin: 1rem;
+  margin: 1vh 2vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -47,7 +50,7 @@ ul li a:hover {
   background-color: #242424;
   text-align: center;
   padding: 0.9rem;
-  border-radius: 40px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -760,6 +763,88 @@ footer {
   }
 }
 
+
+
+/* Leaderboard Styles */
+.leaderboard {
+	background-color: #fff;
+  color: #000;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.leaderboard h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+  
+  
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background-color: #92eeb2;
+}
+
+tr:hover {
+	background-color: #66ce8b
+}
+
+@media (max-width: 768px) {
+	table {
+		display: block;
+		overflow-x: auto;
+	}
+}
+
+.leaderboard-outer{
+  text-align: center;
+  color: var(--primary-color );
+}
+
+.leaderboard-outer p {
+  margin: 5vh 10vw;
+  color: #000;
+}
+
+.calculate {
+  width: 20vw;
+  margin: auto;
+  height: 55px;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+}
+
+.calculate i {
+  margin-left: 0.7rem;
+}
+
+.calculate:hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
 .todo {
   background-color: #b4b4b4;
   display: flex;
