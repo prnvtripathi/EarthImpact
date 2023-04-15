@@ -4,10 +4,16 @@ import pic2 from './assets/pic2.jpg'
 import pic3 from './assets/pic3.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({
+  weights: [400, 500, 600, 700],
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
-    <div>
+    <div className={montserrat.className}>
       <section className="wrapper">
         <div className="container">
 

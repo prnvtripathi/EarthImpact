@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import logoWhite from './assets/logoWhite.png'
 import Image from 'next/image'
 import Head from 'next/head'
-// import { useState } from 'react';
 
 
 const inter = Inter({
