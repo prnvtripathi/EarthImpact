@@ -6,7 +6,7 @@ import pic2 from './assets/pic2.jpg'
 import pic3 from './assets/pic3.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Montserrat } from 'next/font/google'
+import { Montserrat, Inter } from 'next/font/google'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import LineChart from './chart';
@@ -17,14 +17,32 @@ const montserrat = Montserrat({
   subsets: ['latin'],
 })
 
-const data = {
-  labels: ['1858', '1880', '1900', '1920', '1940', '1960', '1980' , '2000' , '2021'],
+const inter = Inter({
+  weights: [400, 500, 600, 700],
+  subsets: ['latin'],
+})
+
+const data1 = {
+  labels: ['1858', '1880', '1900', '1920', '1940', '1960', '1980', '2000', '2021'],
   datasets: [
     {
       label: 'Per capita CO₂ emissions Dataset in Tonnes',
       data: [0.01, 0.02, 0.04, 0.11, 0.13, 0.25, 0.42, 0.92, 1.93],
       fill: false,
       borderColor: '#ff0000',
+      tension: 0.1,
+    },
+  ],
+};
+
+const data2 = {
+  labels: ['1858', '1880', '1900', '1920', '1940', '1960', '1980', '2000', '2021'],
+  datasets: [
+    {
+      label: "India's Annual Carbon Emmisions Dataset in Million Tonnes",
+      data: [0.34, 1.89, 11.93, 34.87, 52.31, 111.33, 291.71, 978.10, 2071.22],
+      fill: false,
+      borderColor: '#0000ff',
       tension: 0.1,
     },
   ],
@@ -49,7 +67,7 @@ const Home = () => {
 
 
   return (
-    <div className={montserrat.className}>
+    <div className={inter.className}>
       <section className="wrapper">
         <div className="container">
 
@@ -99,7 +117,14 @@ const Home = () => {
       </div>
 
       <div className='chart'>
-        <LineChart data={data} options={options}  width={800} height={600}/>
+        <div>
+          <h2>India: Per capita: how much CO2 does the average person emit?</h2>
+          <LineChart data={data1} options={options} width={600} height={600} />
+        </div>
+        <div>
+          <h2>India: What are the country's annual CO2 emissions?</h2>
+          <LineChart data={data2} options={options} width={600} height={600} />
+        </div>
       </div>
 
       <hr className="featurette-divider" />
@@ -112,7 +137,7 @@ const Home = () => {
             </div>
             <div className="about-text">
               <h2>About Earth Impact</h2>
-              <p>Earth Imapct is a platform that aims to bring awareness among people about how carbon emissions affect our lives, calculating your contributions to it and letting people reduce it, together as one! </p>
+              <p>Earth Impact is a platform that aims to bring awareness among people about how carbon emissions affect our lives, calculating your contributions to it and letting people reduce it, together as one! </p>
             </div>
           </div>
         </div>
@@ -178,7 +203,7 @@ const Home = () => {
 
             <div className="grid-col-item">
               <div className="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokewidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               </div>
               <div className="featured_info">
                 <span>Compete with others!</span>
@@ -212,7 +237,7 @@ const Home = () => {
             </div>
             <div className="grid-col-item">
               <div className="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" /></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><g fill="none" fillRule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" /></g></svg>
               </div>
               <div className="featured_info">
                 <span>Getting industry ready soon!</span>

@@ -14,8 +14,7 @@ const montserrat = Montserrat({
 const steps = [
     { id: 1, label: "Transportation" },
     { id: 2, label: "Housing" },
-    { id: 3, label: "Food" },
-    { id: 4, label: "Miscellaneous" }
+    { id: 3, label: "Miscellaneous" }
 ];
 
 const CarbonFootprintCalculator = () => {
@@ -24,21 +23,13 @@ const CarbonFootprintCalculator = () => {
     const [transportationData, setTransportationData] = useState({
         kilometersDriven: 0,
         mpg: 0,
-        kilometersPerWeek: 0
     });
     const [housingData, setHousingData] = useState({
         electricityUsage: 0,
         gasUsage: 0,
-        squareMeters: 0
-    });
-    const [foodData, setFoodData] = useState({
-        meatConsumption: 0,
-        dairyConsumption: 0,
-        produceConsumption: 0
     });
     const [miscData, setMiscData] = useState({
         airTravel: 0,
-        wasteProduction: 0
     });
 
     const handleNext = () => {
@@ -58,13 +49,10 @@ const CarbonFootprintCalculator = () => {
         // Calculate carbon footprint based on user input data
         return (
             transportationData.kilometersDriven * transportationData.kilometersPerWeek * 52 * 0.00000211888 +
-            housingData.electricityUsage * 0.00000004166667 +
-            housingData.gasUsage * 0.00000003263098 +
-            housingData.squareMeters * 0.00000000283333 +
-            (foodData.meatConsumption + foodData.dairyConsumption + foodData.produceConsumption) * 0.0025 +
-            miscData.airTravel * 0.000000064747 +
-            miscData.wasteProduction * 0.00000000030103
-        );
+            housingData.electricityUsage * 0.004166667 +
+            housingData.gasUsage * 0.003263098 * 234 +
+            miscData.airTravel * 0.064747
+        )
     };
 
 
@@ -85,7 +73,7 @@ const CarbonFootprintCalculator = () => {
                             }
                         />
                         <br />
-                        <label>Kilometeres per litre:</label>
+                        <label>Mileage of your car:</label>
                         <input
                             type="number"
                             value={transportationData.mpg}
@@ -93,18 +81,6 @@ const CarbonFootprintCalculator = () => {
                                 setTransportationData({
                                     ...transportationData,
                                     mpg: e.target.value
-                                })
-                            }
-                        />
-                        <br />
-                        <label>Kilometers driven per year:</label>
-                        <input
-                            type="number"
-                            value={transportationData.kilometersDriven}
-                            onChange={(e) =>
-                                setTransportationData({
-                                    ...transportationData,
-                                    kilometersDriven: e.target.value
                                 })
                             }
                         />
@@ -136,61 +112,9 @@ const CarbonFootprintCalculator = () => {
                                 })
                             }
                         />
-                        <br />
-                        <label>Area of your home in squaremeters:</label>
-                        <input
-                            type="number"
-                            value={housingData.squareMeters}
-                            onChange={(e) =>
-                                setHousingData({
-                                    ...housingData,
-                                    squareMeters: e.target.value
-                                })
-                            }
-                        />
                     </div>
                 );
             case 3:
-                return (
-                    <div>
-                        <label>Meat consumption in grams per day:</label>
-                        <input
-                            type="number"
-                            value={foodData.meatConsumption}
-                            onChange={(e) =>
-                                setFoodData({
-                                    ...foodData,
-                                    meatConsumption: e.target.value
-                                })
-                            }
-                        />
-                        <br />
-                        <label>Dairy consumption in grams per day:</label>
-                        <input
-                            type="number"
-                            value={foodData.dairyConsumption}
-                            onChange={(e) =>
-                                setFoodData({
-                                    ...foodData,
-                                    dairyConsumption: e.target.value
-                                })
-                            }
-                        />
-                        <br />
-                        <label>Produce consumption in grams per day:</label>
-                        <input
-                            type="number"
-                            value={foodData.produceConsumption}
-                            onChange={(e) =>
-                                setFoodData({
-                                    ...foodData,
-                                    produceConsumption: e.target.value
-                                })
-                            }
-                        />
-                    </div>
-                );
-            case 4:
                 return (
                     <div>
                         <label>Number of air Kilometers flown per year:</label>
@@ -201,18 +125,6 @@ const CarbonFootprintCalculator = () => {
                                 setMiscData({
                                     ...miscData,
                                     airTravel: e.target.value
-                                })
-                            }
-                        />
-                        <br />
-                        <label>Waste produced in kgs per week:</label>
-                        <input
-                            type="number"
-                            value={miscData.wasteProduction}
-                            onChange={(e) =>
-                                setMiscData({
-                                    ...miscData,
-                                    wasteProduction: e.target.value
                                 })
                             }
                         />
@@ -236,7 +148,7 @@ const CarbonFootprintCalculator = () => {
                     {currentStep === steps.length ? "Calculate" : "Next"}
                 </button>
 
-                <h3 style={{ color: carbonFootprint < 2721 ? "green" : carbonFootprint >= 2721 && carbonFootprint < 7257.5 ? "yellow" : "red" }}>{carbonFootprint ? `Your carbon footprints are: ${carbonFootprint.toFixed(2)} kg CO2` : ""}</h3>
+                <h3 style={{ color: carbonFootprint < 272 ? "green" : carbonFootprint >= 272 && carbonFootprint < 725.75 ? "yellow" : "red" }}>{carbonFootprint ? `Your carbon footprints are: ${carbonFootprint.toFixed(2)} kg CO2` : ""}</h3>
             </div>
         </div>
 

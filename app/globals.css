@@ -71,8 +71,7 @@ ul li a:hover {
 
   color: #0000;
   padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, #1db954 0)
-      calc(100% - var(--_p, 0%)) / 200% 100%,
+  background: linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%)) / 200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
@@ -608,6 +607,7 @@ footer {
 }
 
 .container {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -631,11 +631,18 @@ footer {
   margin: 0 10px;
   color: #ffffff;
   text-decoration: none;
-  scale: 1.6;
+  scale: 1;
 }
 
 .social-icons a:hover {
   color: var(--btn-hover-color);
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -941,4 +948,17 @@ select:focus {
 
 canvas {
   margin: 2rem auto;
+}
+
+.chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chart h2 {
+  margin: 3rem 2rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
 }

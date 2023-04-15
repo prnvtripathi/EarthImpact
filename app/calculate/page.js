@@ -27,3 +27,5 @@ const Calculate = ()  => {
         </div>
     )
 }
+
+export default Calculate
