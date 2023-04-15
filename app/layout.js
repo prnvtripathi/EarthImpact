@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <li><Link href='/save' className='nav-links'>Preventions</Link></li>
             <li><Link href='/todo' className='nav-links'>Actions</Link></li>
           </ul>
-          <Link className='github-link' href='https://github.com/prnvtripathi/EarthImpact'><FaGithub /> Github</Link>
+          <Link className='github-link' href='https://bit.ly/3GOCHEK'><FaDiscord size={24}/> Connect to our bot</Link>
         </nav>
         {children}
 
