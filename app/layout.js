@@ -2,7 +2,7 @@ import Link from 'next/link'
 import './globals.css'
 import './page.module.css'
 import { Inter } from 'next/font/google'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import logoWhite from './assets/logoWhite.png'
 import Image from 'next/image'
 import Head from 'next/head'
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
             <div className="social-icons">
               <Link href="/contact"><FaGithub /></Link>
               <Link href="/contact"><FaTwitter /></Link>
-              <Link href="/contact"><FaLinkedin /></Link>
+              <Link href="/contact"><FaDiscord /></Link>
             </div>
             <div className="copyright">
               &copy; {year} Earth Impact. All rights reserved.

@@ -88,9 +88,12 @@ const Home = () => {
           <h2>Statistics</h2>
           <h2>Statistics</h2>
         </div> */}
-
-
+        <div className='Stats'>
+          <h1>Statistical data</h1>
+        </div>
+         
         <div className='counter-container'>
+          
           <div className='counter'>
             <CountUp start={inView ? null : -100} ref={ref} end={2} duration={5} suffix=' Tonnes' className='count' />
             <p>Per capita CO2 emissions in India</p>
@@ -108,6 +111,7 @@ const Home = () => {
 
 
       <div className='chart'>
+        <h1 className='chart heading'>India's per Capita Emission from 1858-2021</h1>
         <LineChart data={data} options={options}  width={800} height={600}/>
       </div>
 
