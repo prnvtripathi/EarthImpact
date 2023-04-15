@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   color: #242424;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
   display: flexbox;
   font-size: large;
 }
@@ -367,10 +367,15 @@ a {
 /* ====  WRAPPER ==== */
 .wrapper {
   width: 100%;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  padding-top: 5rem;
-  margin-bottom: 5rem;
+  padding: 3rem 1.7rem 5rem 1.7rem;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.wrapper h2 {
+  margin: auto auto 5vh auto;
+  text-align: center;
+  color: var(--primary-color);
 }
 
 .grid-cols-2 {
@@ -509,13 +514,23 @@ a {
 .icon {
   width: 100%;
   line-height: 40px;
+  transition: all 0.2 ease-in-out;
 }
 
 .icon svg {
   width: 30px;
   height: 30px;
   color: #1db954;
+ transition: all 0.2s ease-in-out;
 }
+
+.icon svg:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+
 
 .featured_info {
   width: 100%;
@@ -526,6 +541,7 @@ a {
   display: block;
   font-size: 21px;
   line-height: 33px;
+  font-weight: 600;
   color: var(--lg-heading);
 }
 
@@ -538,6 +554,7 @@ a {
   line-height: 25px;
   font-size: 15.5px;
   user-select: none;
+  font-weight: 500;
 }
 
 /* About Section Styles */
@@ -559,16 +576,27 @@ a {
 .about-image img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #1db954;
   scale: 0.95;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+  --s: 450px;   /* the size of the image */
+  --b: 4px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #1db954; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+
+  outline-offset: calc(var(--s)/-2);
 }
 
 .about-image img:hover {
   scale: 1;
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
   filter: drop-shadow(#242424 1px 1px 5px);
 }
+
 
 .about-text {
   flex: 0 0 60%;
@@ -938,6 +966,172 @@ select:focus {
   justify-content: space-around;
   align-items: center;
 }
+
+
+/* Card Styles */
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	flex-basis: calc(50% - 10px);
+	margin-bottom: 20px;
+}
+
+
+.card a {
+	display: block;
+  
+}
+
+@media (max-width: 768px) {
+	.card {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+}
+
+
+/* Floating water animation */
+
+.content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  margin: auto;
+  padding: auto;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.content h2 {
+ position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--btn-hover-color);
+}
+
+.content h2:nth-child(2) {
+  color: var(--primary-color);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/* JUMBOTRON */
+
+
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+  color: #000000;
+  padding: 2vh 1vw;
+  text-align: left;
+
+}
+
+.jumbotron h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3vh;
+  color: var(--primary-color);
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.button-container .btn {
+  margin: 1vh 3vw;
+  padding: 1vh 3vw;
+}
+
+.button-container .btn:last-child {
+  margin-right: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+      padding: 60px 0;
+  }
+  
+  .jumbotron h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+  }
+  
+  .jumbotron p {
+      font-size: 18px;
+      margin-bottom: 30px;
+  }
+  
+  .button-container {
+      flex-direction: column;
+      margin-bottom: 30px;
+  }
+  
+  .button-container .btn {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  
+  .image-container {
+      justify-content: center;
+      margin-top: 30px;
+  }
+  }
 
 canvas {
   margin: 2rem auto;
