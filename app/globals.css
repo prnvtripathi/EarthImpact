@@ -339,6 +339,14 @@ label {
   transform: translateY(-3px);
 }
 
+.Stats {
+  text-align: center;
+  margin: 2rem auto;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin: 2rem auto;
+}
+
 :root {
   --primary-color: #1db954;
   --link-color: #506690;
