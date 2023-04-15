@@ -84,10 +84,6 @@ const Home = () => {
       <hr className="featurette-divider" />
 
       <section>
-        {/* <div className="content">
-          <h2>Statistics</h2>
-          <h2>Statistics</h2>
-        </div> */}
         <div className='Stats'>
           <h1>Statistics That Tell The Tale</h1>
         </div>
