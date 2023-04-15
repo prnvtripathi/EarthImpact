@@ -284,24 +284,8 @@ const Home = () => {
       <hr className="featurette-divider" />
  
 
-      {/* <div className="jumbotron">
-        <div className="container">
-
-          <div>
-            <h1>Scalable to Your Use Case!</h1>
-            <p>Whether you're an individual starting out on your journey or a big industry, we've got you covered!<br></br>We've got individual calculation algorithms tailored to your specific needs, so you get the best we have to offer</p>
-            <div className="button-container">
-              <a href="#" class="btn view_more_btn">Start as an individual</a>
-              <a href="#" class="btn documentation_btn">Start as an industry</a>
-            </div>
-          </div>
-          <div>
-            <div class="image-container">
-
-            </div>
-          </div>
-        </div>
-      </div> */}
+    
+    
     </div>
 
 
