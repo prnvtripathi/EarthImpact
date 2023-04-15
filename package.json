@@ -16,15 +16,11 @@
     "next": "^13.3.0",
     "next-auth": "^4.22.0",
     "react": "18.2.0",
-<<<<<<< HEAD
     "react-chartjs-2": "^5.2.0",
-    "react5-dom": "18.2.0",
-    "react-icons": "^4.8.0"
-=======
-    "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-countup": "^6.4.2",
     "react-intersection-observer": "^9.4.3"
->>>>>>> 6ae34d6acbecbdc77cac4685e14ff24747558896
+
   }
 }
