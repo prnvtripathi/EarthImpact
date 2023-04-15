@@ -10,7 +10,7 @@ const montserrat = Montserrat({
     style: ["italic", "normal"],
 })
 
-function TodoList() {
+const TodoList = () => {
     const [todos, setTodos] = useState([]);
     const [done, setDone] = useState([]);
     const [selectedOption, setSelectedOption] = useState('')

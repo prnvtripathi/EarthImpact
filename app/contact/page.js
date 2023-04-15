@@ -20,7 +20,7 @@ function createCard(contact) {
     );
 }
 
-export default function Contact() {
+const Contact = () => {
     return (
         <div className={montserrat.className}>
             <h1 className="contact-heading">Contact the Developers</h1>
@@ -30,3 +30,5 @@ export default function Contact() {
         </div>
     )
 }
+
+export default Contact;

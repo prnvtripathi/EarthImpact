@@ -9,7 +9,7 @@ const montserrat = Montserrat({
     styles: ['normal', 'italic'],
 })
 
-export default function Save() {
+const Save = () => {
     return (
         <div className={montserrat.className}>
             <h1 className='save-heading'>Let us help you in saving your carbon footprints 👣</h1>
@@ -22,3 +22,5 @@ export default function Save() {
         </div>
     );
 }
+
+export default Save;

@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import logoWhite from './assets/logoWhite.png'
 import Image from 'next/image'
 import Head from 'next/head'
-// import { useState } from 'react';
 
 
 const inter = Inter({
@@ -14,6 +13,9 @@ const inter = Inter({
 })
 
 export default function RootLayout({ children }) {
+
+  const date = new Date();
+  const year = date.getFullYear();
 
   return (
     <html lang="en">
@@ -29,7 +31,6 @@ export default function RootLayout({ children }) {
             <li><Link href='/' className="nav-links">Home</Link></li>
             <li><Link href='/calculate' className="nav-links">Estimate</Link></li>
             <li><Link href='/save' className='nav-links'>Preventions</Link></li>
-            <li><Link href='/contact' className='nav-links'>Contact</Link></li>
             <li><Link href='/todo' className='nav-links'>Actions</Link></li>
           </ul>
           <Link className='github-link' href='https://github.com/prnvtripathi/EarthImpact'><FaGithub /> Github</Link>
@@ -53,7 +54,7 @@ export default function RootLayout({ children }) {
               <Link href="/contact"><FaLinkedin /></Link>
             </div>
             <div className="copyright">
-              &copy; 2023 Earth Impact. All rights reserved.
+              &copy; {year} Earth Impact. All rights reserved.
             </div>
           </div>
         </footer>
