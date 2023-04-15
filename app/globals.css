@@ -197,7 +197,7 @@ label {
   transition: all 0.3s ease-in-out;
 }
 
-.div-btn:hover{
+.div-btn:hover {
   padding: 0.3rem 0.7rem;
   transform: translateY(-5px);
   box-shadow: #1db954 1px 1px 12px;
@@ -771,63 +771,100 @@ footer {
   }
 }
 
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.counter:hover {
+  transform: translateY(-5px);
+}
+
+.counter p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.counter .count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4848;
+}
 
 
 /* Leaderboard Styles */
 .leaderboard {
-	background-color: #fff;
+  background-color: #fff;
   color: #000;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-	border-radius: 10px;
-	padding: 20px;
-	max-width: 800px;
-	margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .leaderboard h2 {
-	margin-top: 0;
-	margin-bottom: 20px;
-	text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 table {
-	border-collapse: collapse;
-	width: 100%;
-  
-  
+  border-collapse: collapse;
+  width: 100%;
+
+
 }
 
-th, td {
-	padding: 10px;
-	text-align: center;
+th,
+td {
+  padding: 10px;
+  text-align: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  
+
 }
 
 th {
-	background-color: #333;
-	color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 tr:nth-child(even) {
-	background-color: #92eeb2;
+  background-color: #92eeb2;
 }
 
 tr:hover {
-	background-color: #66ce8b
+  background-color: #66ce8b
 }
 
 @media (max-width: 768px) {
-	table {
-		display: block;
-		overflow-x: auto;
-	}
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
-.leaderboard-outer{
+.leaderboard-outer {
   text-align: center;
-  color: var(--primary-color );
+  color: var(--primary-color);
 }
 
 .leaderboard-outer p {
@@ -853,6 +890,7 @@ tr:hover {
 .calculate:hover {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
+
 .todo {
   background-color: #b4b4b4;
   display: flex;

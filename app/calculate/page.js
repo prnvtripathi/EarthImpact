@@ -8,7 +8,7 @@ const montserrat = Montserrat({
     style: ["italic", "normal"],
 })
 
-export default function Calculate() {
+const Calculate = ()  => {
     return (
         <div className={montserrat.className}>
             <h1 className='calc-head'>Who are you?</h1>
