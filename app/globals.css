@@ -192,9 +192,10 @@ label {
   background-color: #1db954;
   color: #eee;
   padding: 0.35rem 0.75rem;
-  margin: 10rem auto;
+  margin: 4rem auto;
   border-radius: 16px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .div-btn:hover {
@@ -628,13 +629,22 @@ a {
 
 footer {
   width: 100%;
+  left: 0;
+  display: flexbox;
   background-color: #242424;
   padding: 30px 0;
   margin: auto;
   color: var(--primary-color);
+  position: relative;
+    bottom: 0;
+    min-height: 13vh;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .container {
+  display: flexbox;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -649,17 +659,24 @@ footer {
 
 .links a {
   display: inline-block;
-  margin: 0 15px;
+  margin: 3vh 1vw;
   color: var(--primary-color);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #28f670
 }
 
 .social-icons a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 3vh 3vw;
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
   scale: 1;
+
 }
 
 .social-icons a:hover {
@@ -821,6 +838,7 @@ footer {
 
 .counter:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .counter p {

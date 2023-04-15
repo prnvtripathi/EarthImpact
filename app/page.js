@@ -102,20 +102,19 @@ const Home = () => {
       <hr className="featurette-divider" />
 
       <section>
-        {/* <div className="content">
-          <h2>Statistics</h2>
-          <h2>Statistics</h2>
-        </div> */}
-
-
+        <div className='Stats'>
+          <h1>Statistics That Tell The Tale</h1>
+        </div>
+         
         <div className='counter-container'>
+          
           <div className='counter'>
             <CountUp start={inView ? null : -100} ref={ref} end={2} duration={5} suffix=' Tonnes' className='count' />
             <p>Per capita CO2 emissions in India</p>
           </div>
           <div className='counter'>
             <CountUp start={inView ? null : 0} end={54} duration={5} suffix=' Billion Tonnes' className='count' />
-            <p>India's share in World Emissions</p>
+            <p>India's share in World Emissions till date</p>
           </div>
           <div className='counter'>
             <CountUp start={inView ? null : -10} end={15} duration={5} suffix=' Tonnes' className='count' />
