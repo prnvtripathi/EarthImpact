@@ -71,7 +71,8 @@ ul li a:hover {
 
   color: #0000;
   padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+  background: linear-gradient(90deg, var(--c) 50%, #1db954 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
@@ -350,7 +351,6 @@ label {
 a {
   text-decoration: none;
 }
-
 
 /* ==== CONTAINER ==== */
 .container {
@@ -828,7 +828,6 @@ footer {
   color: #ff4848;
 }
 
-
 /* Leaderboard Styles */
 .leaderboard {
   background-color: #fff;
@@ -849,8 +848,6 @@ footer {
 table {
   border-collapse: collapse;
   width: 100%;
-
-
 }
 
 th,
@@ -859,7 +856,6 @@ td {
   text-align: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-
 }
 
 th {
@@ -872,7 +868,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-  background-color: #66ce8b
+  background-color: #66ce8b;
 }
 
 @media (max-width: 768px) {
@@ -970,6 +966,7 @@ select:focus {
   justify-content: space-around;
   align-items: center;
 }
+
 
 /* Card Styles */
 .card-container {
@@ -1134,4 +1131,8 @@ select:focus {
       justify-content: center;
       margin-top: 30px;
   }
+  }
+
+canvas {
+  margin: 2rem auto;
 }
