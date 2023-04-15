@@ -108,12 +108,20 @@ img:hover {
   padding: 2rem;
   border-radius: 30px;
   box-shadow: #24242460 10px 10px 30px;
+  text-align: center;
 }
 
 div h3 {
   font-weight: 600;
   font-size: 1.8rem;
   margin: 1rem auto;
+}
+
+.form-box hr {
+  margin: 1rem auto;
+  width: 80%;
+  border: 4px solid #1db954;
+  border-radius: 12px;
 }
 
 button {
@@ -162,6 +170,34 @@ label {
   height: 6px;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
+}
+
+.calc-head {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.div-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto auto 10rem;
+}
+
+.div-btn {
+  background-color: #1db954;
+  color: #eee;
+  padding: 0.35rem 0.75rem;
+  margin: 10rem auto;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.div-btn:hover{
+  padding: 0.3rem 0.7rem;
+  transform: translateY(-5px);
+  box-shadow: #1db954 1px 1px 12px;
 }
 
 /* Accordian in Save */
