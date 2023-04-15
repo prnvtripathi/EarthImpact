@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         </nav>
         {children}
 
-        <footer>
+        <footer className={inter.className}>
           <div className="container">
             <div className="logo">
               <Image src={logoWhite} alt="Earth Impact Logo" width={200} height={100} />
