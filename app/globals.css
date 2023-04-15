@@ -1151,24 +1151,3 @@ select:focus {
 canvas {
   margin: 2rem auto;
 }
-
-
-/* CHART */
-
-.chart h1 {
-  color: var(--primary-color);
-  text-align: center;
-  margin: 10vh 2vw;
-}
-
-.Stats h1 {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 8vh 2vw;
-}
-
-.calc-para {
-  text-align: center;
-}
