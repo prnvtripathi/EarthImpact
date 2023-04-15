@@ -42,17 +42,18 @@ export default function RootLayout({ children }) {
             <div className="logo">
               <Image src={logoWhite} alt="Earth Impact Logo" width={200} height={100} />
             </div>
-            <div className="links">
-              <Link href="https://github.com/prnvtripathi/EarthImpact">GitHub</Link>
-              <Link href="/">Log in/Sign Up</Link>
-              <Link href="https://earth-impact.vercel.app">Vercel</Link>
-              <Link href="/contact">Contact Us</Link>
-            </div>
             <div className="social-icons">
               <Link href="/contact"><FaGithub /></Link>
               <Link href="/contact"><FaTwitter /></Link>
               <Link href="/contact"><FaDiscord /></Link>
             </div>
+            <div className="links">
+              <Link href="https://github.com/prnvtripathi/EarthImpact">GitHub</Link>
+              <Link href="/">Log in/Sign Up</Link>
+              <Link href="https://earth-impact.vercel.app">Vercel</Link>
+              <Link href="https://ourworldindata.org/co2/country/india">Check out University of Oxford's official study</Link>
+            </div>
+            
             <div className="copyright">
               &copy; {year} Earth Impact. All rights reserved.
             </div>

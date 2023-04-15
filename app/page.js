@@ -89,7 +89,7 @@ const Home = () => {
           <h2>Statistics</h2>
         </div> */}
         <div className='Stats'>
-          <h1>Statistical data</h1>
+          <h1>Statistics That Tell The Tale</h1>
         </div>
          
         <div className='counter-container'>
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
           <div className='counter'>
             <CountUp start={inView ? null : 0} end={54} duration={5} suffix=' Billion Tonnes' className='count' />
-            <p>India's share in World Emissions</p>
+            <p>India's share in World Emissions till date</p>
           </div>
           <div className='counter'>
             <CountUp start={inView ? null : -10} end={15} duration={5} suffix=' Tonnes' className='count' />
