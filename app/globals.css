@@ -71,8 +71,7 @@ ul li a:hover {
 
   color: #0000;
   padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, #1db954 0)
-      calc(100% - var(--_p, 0%)) / 200% 100%,
+  background: linear-gradient(90deg, var(--c) 50%, #1db954 0) calc(100% - var(--_p, 0%)) / 200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
@@ -112,12 +111,20 @@ img:hover {
   padding: 2rem;
   border-radius: 30px;
   box-shadow: #24242460 10px 10px 30px;
+  text-align: center;
 }
 
 div h3 {
   font-weight: 600;
   font-size: 1.8rem;
   margin: 1rem auto;
+}
+
+.form-box hr {
+  margin: 1rem auto;
+  width: 80%;
+  border: 4px solid #1db954;
+  border-radius: 12px;
 }
 
 button {
@@ -166,6 +173,34 @@ label {
   height: 6px;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
+}
+
+.calc-head {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.div-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto auto 10rem;
+}
+
+.div-btn {
+  background-color: #1db954;
+  color: #eee;
+  padding: 0.35rem 0.75rem;
+  margin: 10rem auto;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.div-btn:hover{
+  padding: 0.3rem 0.7rem;
+  transform: translateY(-5px);
+  box-shadow: #1db954 1px 1px 12px;
 }
 
 /* Accordian in Save */
@@ -729,6 +764,7 @@ footer {
 }
 
 
+
 /* Leaderboard Styles */
 .leaderboard {
 	background-color: #fff;
@@ -808,4 +844,63 @@ tr:hover {
 
 .calculate:hover {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.todo {
+  background-color: #b4b4b4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+}
+
+.todo-list {
+  border: #00000050 2px solid;
+  padding: 0.5rem;
+  border-radius: 24px;
+}
+
+.todo-list button {
+  margin: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.todo-items {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+select {
+  width: 25rem;
+  border-radius: 24px;
+  border: #1db954 2px solid;
+  background-color: #00000010;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+select:focus {
+  outline: none;
+}
+
+.todo-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-headings h2 {
+  margin: 0 2rem;
+}
+
+.done-tasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
