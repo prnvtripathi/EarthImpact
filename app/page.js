@@ -3,6 +3,7 @@ import Picture1 from './assets/Picture1.jpg'
 import pic2 from './assets/pic2.jpg'
 import pic3 from './assets/pic3.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -19,9 +20,12 @@ export default function Home() {
               </p>
 
               <div className="btn_wrapper">
-                <button className="btn view_more_btn">
-                  Calculate now <i className="ri-arrow-right-line"></i>
-                </button>
+                <Link href='/calculate'>
+                  <button className="btn view_more_btn">
+                    Calculate now <i className="ri-arrow-right-line"></i>
+                  </button>
+                </Link>
+
 
                 <button className="btn documentation_btn" href="#about-content">Learn More</button>
               </div>
@@ -222,9 +226,13 @@ export default function Home() {
         <br></br>
         <p>Join in on the bandwagon! Get to competing with the best, click the below button and get started straight away!
         </p>
-        <button className="btn calculate">
-          Calculate my carbon footprint now <i className="ri-arrow-right-line"></i>
-        </button>
+        <Link href="/calculate">
+          <button className="btn calculate">
+            Calculate my carbon footprint now <i className="ri-arrow-right-line"></i>
+          </button>
+        </Link>
+
+
       </div>
       <hr className="featurette-divider" />
 
