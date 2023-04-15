@@ -123,7 +123,7 @@ export default function Home() {
             </div>
             <div className="grid-col-item">
               <div className="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               </div>
               <div className="featured_info">
                 <span>Badges for the bestest</span>
@@ -134,18 +134,18 @@ export default function Home() {
             </div>
             <div className="grid-col-item">
               <div className="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               </div>
               <div className="featured_info">
                 <span>Daily challenges for motivation!</span>
-                <p> 
+                <p>
                   Earth Impact gives you daily tasks you can select yourself and work on them for the day, marking them as done to increase your score!
                 </p>
               </div>
             </div>
             <div className="grid-col-item">
               <div className="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8" /></g></svg>
               </div>
               <div className="featured_info">
                 <span>Getting industry ready soon!</span>
@@ -158,6 +158,76 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <hr className="featurette-divider" />
+
+      <div className="leaderboard-outer"><br></br>
+        <h1>Check Out The Top Performers on Earth Impact!</h1>
+        <p>These people have been the highest performers of all time, making sure to consistently do their part. Kudos to them for helping in making the Earth a better place to live. Their contributions are highly appreciated by Earth Impact team and fellow people of dear Earth!</p>
+        <div className="leaderboard">
+          <h2>Top 5 Performers</h2>
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>Challenges Completed</th>
+                  <th>Carbon Saved (kg Co<sub>2</sub>)</th>
+                  <th>Total Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>95</td>
+                  <td>90</td>
+                  <td>950 xp</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jane Doe</td>
+                  <td>91</td>
+                  <td>92</td>
+                  <td>910 xp</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Bob Johnson</td>
+                  <td>89</td>
+                  <td>88</td>
+                  <td>890 xp</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Sara Lee</td>
+                  <td>88</td>
+                  <td>81</td>
+                  <td>880 xp</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Mike Davis</td>
+                  <td>85</td>
+                  <td>79</td>
+                  <td>850 xp</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+        <br></br>
+        <p>Join in on the bandwagon! Get to competing with the best, click the below button and get started straight away!
+        </p>
+        <button className="btn calculate">
+          Calculate my carbon footprint now <i className="ri-arrow-right-line"></i>
+        </button>
+      </div>
+      <hr className="featurette-divider" />
+
     </div>
   )
 }
