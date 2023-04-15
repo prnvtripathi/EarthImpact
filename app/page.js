@@ -73,7 +73,7 @@ const Home = () => {
 
           <div className="grid-cols-2">
             <div className="grid-item-1">
-              <h1 className="main-heading">Welcome to <br></br><span>Earth Impact</span>
+              <h1 className="main-heading"><strong>Welcome to <br></br><span>Earth Impact</span></strong>
               </h1>
               <p className="info-text">
                 Small steps for a big impact: track and reduce your carbon footprint with Earth Impact
@@ -101,20 +101,29 @@ const Home = () => {
 
       <hr className="featurette-divider" />
 
-      <div className='counter-container'>
-        <div className='counter'>
-          <CountUp start={inView ? null : -100} ref={ref} end={2} duration={3} suffix=' Tonnes' className='count' />
-          <p>Per capita CO2 emissions in India</p>
+      <section>
+        {/* <div className="content">
+          <h2>Statistics</h2>
+          <h2>Statistics</h2>
+        </div> */}
+
+
+        <div className='counter-container'>
+          <div className='counter'>
+            <CountUp start={inView ? null : -100} ref={ref} end={2} duration={5} suffix=' Tonnes' className='count' />
+            <p>Per capita CO2 emissions in India</p>
+          </div>
+          <div className='counter'>
+            <CountUp start={inView ? null : 0} end={54} duration={5} suffix=' Billion Tonnes' className='count' />
+            <p>India's share in World Emissions</p>
+          </div>
+          <div className='counter'>
+            <CountUp start={inView ? null : -10} end={15} duration={5} suffix=' Tonnes' className='count' />
+            <p>Per capita CO2 emissions in US</p>
+          </div>
         </div>
-        <div className='counter'>
-          <CountUp start={inView ? null : 0} end={54} duration={3} suffix=' Billion Tonnes' className='count' />
-          <p>India's share in World Emissions</p>
-        </div>
-        <div className='counter'>
-          <CountUp start={inView ? null : -10} end={15} duration={3} suffix=' Tonnes' className='count' />
-          <p>Per capita CO2 emissions in US</p>
-        </div>
-      </div>
+      </section>
+
 
       <div className='chart'>
         <div>
@@ -164,6 +173,7 @@ const Home = () => {
       <hr className="featurette-divider" />
 
       <section className="wrapper">
+        <h2>Features In a Nutshell</h2>
         <div className="container" data-aos="fade-up" data-aos-duration="1000">
           <div className="grid-cols-3">
             <div className="grid-col-item">
@@ -323,8 +333,13 @@ const Home = () => {
 
       </div>
       <hr className="featurette-divider" />
+ 
 
+    
+    
     </div>
+
+
   )
 }
 
