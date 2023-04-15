@@ -72,6 +72,7 @@ export default function Home() {
       <hr className="featurette-divider" />
 
       <section className="wrapper">
+        <h2>Features In a Nutshell</h2>
         <div className="container" data-aos="fade-up" data-aos-duration="1000">
           <div className="grid-cols-3">
             <div className="grid-col-item">
@@ -227,6 +228,14 @@ export default function Home() {
         </button>
       </div>
       <hr className="featurette-divider" />
+
+      <section>
+        <div className="content">
+          <h2>Statistics</h2>
+          <h2>Statistics</h2>
+        </div>
+      </section>
+
 
     </div>
   )
