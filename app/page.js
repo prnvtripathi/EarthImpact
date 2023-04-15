@@ -261,7 +261,27 @@ const Home = () => {
       </section>
 
       <hr className="featurette-divider" />
+      
+      <section class="description">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="section-title">What's In It For You?</h1>
+        <p class="section-description">We aim to bring everyone a better life. Putting carbon footprint reduction at its center, we try to make it so that every preventive measure you take gives you not just one but many benefits combined!</p>
 
+        <h1 class="section-title-2"><i>"Success is finding satifaction in giving a little more than you take"</i></h1>
+
+          <p class="section-description">It's not just about carbon neutrality, but lifestyle changes you'll thank your future self for.</p>
+          <p class="section-description">It saves you a precious commodity... money. That's something that's always better when more.</p>
+      </div>
+      {/* <div class="about-image">
+      <Image src={Picture1} alt="Des-img" />
+      </div> */}
+    </div>
+  </div>
+</section>
+
+<hr className="featurette-divider" />
       <div className="leaderboard-outer"><br></br>
         <h1>Check Out The Top Performers on Earth Impact!</h1>
         <p>These people have been the highest performers of all time, making sure to consistently do their part. Kudos to them for helping in making the Earth a better place to live. Their contributions are highly appreciated by Earth Impact team and fellow people of dear Earth!</p>
