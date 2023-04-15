@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.20.0",
     "chart.js": "^4.2.1",
     "@supabase/auth-ui-react": "^0.3.5",
     "@supabase/supabase-js": "^2.20.0",
