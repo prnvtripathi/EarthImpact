@@ -245,64 +245,84 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        <hr className="featurette-divider" />
+      <hr className="featurette-divider" />
+      
+      <section class="description">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="section-title">What's In It For You?</h1>
+        <p class="section-description">We aim to bring everyone a better life. Putting carbon footprint reduction at its center, we try to make it so that every preventive measure you take gives you not just one but many benefits combined!</p>
 
-        <div className="leaderboard-outer"><br></br>
-          <h1>Check Out The Top Performers on Earth Impact!</h1>
-          <p>These people have been the highest performers of all time, making sure to consistently do their part. Kudos to them for helping in making the Earth a better place to live. Their contributions are highly appreciated by Earth Impact team and fellow people of dear Earth!</p>
-          <div className="leaderboard">
-            <h2>Top 5 Performers</h2>
-            <div className="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Challenges Completed</th>
-                    <th>Carbon Saved (kg Co<sub>2</sub>)</th>
-                    <th>Total Experience</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
-                    <td>95</td>
-                    <td>90</td>
-                    <td>950 xp</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Jane Doe</td>
-                    <td>91</td>
-                    <td>92</td>
-                    <td>910 xp</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Bob Johnson</td>
-                    <td>89</td>
-                    <td>88</td>
-                    <td>890 xp</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Sara Lee</td>
-                    <td>88</td>
-                    <td>81</td>
-                    <td>880 xp</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Mike Davis</td>
-                    <td>85</td>
-                    <td>79</td>
-                    <td>850 xp</td>
-                  </tr>
-                </tbody>
-              </table>
+        <h1 class="section-title-2"><i>"Success is finding satifaction in giving a little more than you take"</i></h1>
+
+          <p class="section-description">It's not just about carbon neutrality, but lifestyle changes you'll thank your future self for.</p>
+          <p class="section-description">It saves you a precious commodity... money. That's something that's always better when more.</p>
+      </div>
+      {/* <div class="about-image">
+      <Image src={Picture1} alt="Des-img" />
+      </div> */}
+    </div>
+  </div>
+</section>
+
+<hr className="featurette-divider" />
+      <div className="leaderboard-outer"><br></br>
+        <h1>Check Out The Top Performers on Earth Impact!</h1>
+        <p>These people have been the highest performers of all time, making sure to consistently do their part. Kudos to them for helping in making the Earth a better place to live. Their contributions are highly appreciated by Earth Impact team and fellow people of dear Earth!</p>
+        <div className="leaderboard">
+          <h2>Top 5 Performers</h2>
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>Challenges Completed</th>
+                  <th>Carbon Saved (kg Co<sub>2</sub>)</th>
+                  <th>Total Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>95</td>
+                  <td>90</td>
+                  <td>950 xp</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jane Doe</td>
+                  <td>91</td>
+                  <td>92</td>
+                  <td>910 xp</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Bob Johnson</td>
+                  <td>89</td>
+                  <td>88</td>
+                  <td>890 xp</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Sara Lee</td>
+                  <td>88</td>
+                  <td>81</td>
+                  <td>880 xp</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Mike Davis</td>
+                  <td>85</td>
+                  <td>79</td>
+                  <td>850 xp</td>
+                </tr>
+              </tbody>
+            </table>
 
             </div>
 

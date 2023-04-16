@@ -99,7 +99,7 @@ img {
 
 img:hover {
   scale: 1;
-  filter: drop-shadow(5px 5px 50px #1db954);
+ 
 }
 
 /* Calculate */
@@ -1092,4 +1092,83 @@ canvas {
   margin: 3rem 2rem;
   font-size: 1.5rem;
   color: var(--primary-color);
+}
+
+
+/* What's in it */
+
+.description {
+  padding: 3vh 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.section-title-2 {
+  font-family: Franklin Gothic Medium;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--btn-hover-color);
+}
+
+.section-description {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.section-list {
+
+  padding: 0;
+  margin: 0;
+  background-color: #28f06e00;
+}
+
+.section-list li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .description {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .section-list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .section-image {
+    margin-top: 20px;
+  }
 }
