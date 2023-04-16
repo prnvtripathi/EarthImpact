@@ -1,31 +1,47 @@
 <p align="center">
-  <a href="" target="_blank">
-    <picture>
-    
-    </picture>
+  <a href="https://earth-impact.vercel.app/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/113186458/232259289-3cf27e6f-541c-43d4-a0e9-452adea803d5.png" height="150px" weight="150px">
   </a>
 </p>
 
 <p align="center">
- A number cruncher that determines the amount of carbon emitted by you, and provides ways to reduce it 
+A platform where people come together, calculate their carbon footprint and work on reducing it 
 </p>
 <br>
 
-Carbon Check is a platform to calculate the amount of carbon you emit anually, take pledges to reduce your carbon footprint and compete with others around you to help make Earth a better place to live in, not just for you, but also for the generations to come. 
+Earth Impact is a platform to calculate the amount of carbon you emit anually, take pledges to reduce your carbon footprint and compete with others around you to help make Earth a better place to live in, not just for you, but also for the generations to come. 
 
-![NPM](https://img.shields.io/npm/l/next) ![AppVeyor](https://img.shields.io/appveyor/build/prnvtripathi/carbon-check?style=plastic)
+![NPM](https://img.shields.io/npm/l/next) ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/prnvtripathi/EarthImpact?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/prnvtripathi/EarthImpact?style=plastic)
 
 ---
 
-## Getting Started - Building and running Carbon Check
+## Getting Started - Building and running Earth Impact
 
-To run a local developement build of Carbon Check on your local machine, make sure to have the following dependencies installed:-
-- NPM (or yarn)
-- Next.js
-- React DOM
--
+To run a local developement build of Earth Impact on your local machine, make sure to have the following dependencies installed:-
+    
+   ```bash 
+- "@types/chart.js": "^2.9.37",
+- "chart.js": "^4.2.1",
+- "express": "^4.18.2",
+- "gsap": "^3.11.5",
+- "next": "^13.3.0",
+- "react": "18.2.0",
+- "react-chartjs-2": "^5.2.0",
+- "react-countup": "^6.4.2",
+- "react-dom": "18.2.0",
+- "react-icons": "^4.8.0",
+- "react-intersection-observer": "^9.4.3"
+```
+    
+- You can add these dependencies using `npm i`.
+    
+- Then run the build using
 
-First, run the development server:
+```bash
+npm run build
+```
+
+- Finally, run the development server:
 
 ```bash
 npm run dev
@@ -57,8 +73,7 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/).
 
 ---
 
