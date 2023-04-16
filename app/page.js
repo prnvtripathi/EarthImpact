@@ -8,7 +8,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
 import LineChart from './chart';
 
 const inter = Inter({
@@ -53,13 +52,6 @@ const options = {
 
 
 const Home = () => {
-
-  const { ref, inView } = useInView({
-    threshold: 0.7, // Trigger when the element is 70% in view
-    triggerOnce: true // Trigger only once
-  });
-
-
   return (
     <>
       <div className={inter.className}>
@@ -104,15 +96,15 @@ const Home = () => {
           <div className='counter-container'>
 
             <div className='counter'>
-              <CountUp start={inView ? null : -100} ref={ref} end={2} duration={5} suffix=' Tonnes' className='count' />
+              <CountUp start={-100} end={2} duration={5} suffix=' Tonnes' className='count' />
               <p>Per capita CO2 emissions in India</p>
             </div>
             <div className='counter'>
-              <CountUp start={inView ? null : 0} end={54} duration={5} suffix=' Billion Tonnes' className='count' />
+              <CountUp start={0} end={54} duration={5} suffix=' Billion Tonnes' className='count' />
               <p>India's share in World Emissions till date</p>
             </div>
             <div className='counter'>
-              <CountUp start={inView ? null : -10} end={15} duration={5} suffix=' Tonnes' className='count' />
+              <CountUp start={-10} end={15} duration={5} suffix=' Tonnes' className='count' />
               <p>Per capita CO2 emissions in US</p>
             </div>
           </div>
