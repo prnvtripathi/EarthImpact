@@ -4,6 +4,7 @@ import '../../globals.css'
 import { Montserrat } from 'next/font/google'
 import { useState } from 'react'
 import { FaDiscord } from 'react-icons/fa'
+import Link from 'next/link'
 
 
 const montserrat = Montserrat({
@@ -151,9 +152,12 @@ const CarbonFootprintCalculator = () => {
 
                 <h3 style={{ color: carbonFootprint < 272 ? "green" : carbonFootprint >= 272 && carbonFootprint < 725.75 ? "yellow" : "red" }}>{carbonFootprint ? `Your carbon footprints are: ${carbonFootprint.toFixed(2)} kg CO2` : ""}</h3>
             </div>
+            <Link href='https://bit.ly/3GOCHEK'>
             <div className='discord-btn' style={carbonFootprint ? { opacity: 1 } : { opacity: 0 }}>
                 <FaDiscord />Link our Discord bot in your servers
             </div>
+            </Link>
+
 
         </div>
 

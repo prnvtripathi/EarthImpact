@@ -92,11 +92,13 @@ const CarbonFootprint = () => {
                 </label>
                 <br />
                 <button type="submit" >Calculate</button>
-                <h3 style={{ color: emissions < 2721 ? "green" : emissions >= 2721 && emissions < 7257.5 ? "yellow" : "red" }}>{emissions ? `Your carbon footprints are: ${emissions.toFixed(2)} kg CO2` : ""}</h3>
+                <h3 style={{ color: emissions < 272 ? "green" : emissions >= 272 && emissions < 725.75 ? "yellow" : "red" }}>{emissions ? `Your carbon footprints are: ${emissions.toFixed(2)} kg CO2` : ""}</h3>
             </form>
-            <div className='discord-btn' style={emissions ? { opacity: 1 } : { opacity: 0 }}>
-                <FaDiscord /> Link our Discord bot in your servers
-            </div>
+            <Link href='https://bit.ly/3GOCHEK'>
+                <div className='discord-btn' style={emissions ? { opacity: 1 } : { opacity: 0 }}>
+                    <FaDiscord />Link our Discord bot in your servers
+                </div>
+            </Link>
         </div >
     );
 };
