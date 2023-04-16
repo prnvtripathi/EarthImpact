@@ -12,7 +12,6 @@
     "@types/chart.js": "^2.9.37",
     "chart.js": "^4.2.1",
     "express": "^4.18.2",
-    "firebase": "^9.19.1",
     "next": "^13.3.0",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
