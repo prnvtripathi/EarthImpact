@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Montserrat } from 'next/font/google';
 import { FaDiscord } from 'react-icons/fa';
+import Link from 'next/link';
 
 const montserrat = Montserrat({
     subsets: ["latin"],
