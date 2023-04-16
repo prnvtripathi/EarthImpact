@@ -31,8 +31,9 @@ np.set_printoptions(precision=2)
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
 
 import json
-# Create a Python dictionary with some data
-data = regressor.predict([dataset[-1]])
+#printing all intercepts and constant
+print(regressor.coef_)
+print(regressor.intercept_)
 
 # Open a file in write mode and use json.dump() to write the data to the file in JSON format
 with open('resultindustry.json', 'w') as file:
