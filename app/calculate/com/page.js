@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Montserrat } from 'next/font/google';
+import { FaDiscord } from 'react-icons/fa';
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -93,7 +94,10 @@ const CarbonFootprint = () => {
                 <button type="submit" >Calculate</button>
                 <h3 style={{ color: emissions < 2721 ? "green" : emissions >= 2721 && emissions < 7257.5 ? "yellow" : "red" }}>{emissions ? `Your carbon footprints are: ${emissions.toFixed(2)} kg CO2` : ""}</h3>
             </form>
-        </div>
+            <div className='discord-btn' style={emissions ? { opacity: 1 } : { opacity: 0 }}>
+                <FaDiscord /> Link our Discord bot in your servers
+            </div>
+        </div >
     );
 };
 

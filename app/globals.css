@@ -47,11 +47,24 @@ ul li a:hover {
   color: #eee;
   font-weight: 600;
   text-decoration: none;
-  background-color: #6A5ACD;
+  background-color: #242424;
   text-align: center;
   padding: 0.9rem;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+}
+
+.discord-btn {
+  color: #eee;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #7289da;
+  text-align: center;
+  padding: 0.9rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 25%;
+  margin: 3rem auto;
 }
 
 .github-link:hover {

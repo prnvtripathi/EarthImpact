@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <li><Link href='/save' className='nav-links'>Preventions</Link></li>
             <li><Link href='/todo' className='nav-links'>Actions</Link></li>
           </ul>
-          <Link className='github-link' href='https://bit.ly/3GOCHEK'><FaDiscord size={24}/> Connect to our bot</Link>
+          <Link className='github-link' href='https://github.com/prnvtripathi/EarthImpact'><FaGithub size={24}/> GitHub</Link>
         </nav>
         {children}
 
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="links">
               <Link href="https://github.com/prnvtripathi/EarthImpact">GitHub</Link>
-              <Link href="/">Log in/Sign Up</Link>
+              <Link href="https://bit.ly/3GOCHEK">Discord</Link>
               <Link href="https://earth-impact.vercel.app">Vercel</Link>
               <Link href="https://ourworldindata.org/co2/country/india">Check out University of Oxford's official study</Link>
             </div>
