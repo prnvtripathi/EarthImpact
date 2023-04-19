@@ -4,6 +4,10 @@
   </a>
 </p>
 
+<h1 align="center">
+Earth Impact
+</h1>
+
 <p align="center">
 A platform where people come together, calculate their carbon footprint and work on reducing it 
 </p>
