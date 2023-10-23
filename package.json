@@ -12,7 +12,7 @@
     "@types/chart.js": "^2.9.38",
     "chart.js": "^4.4.0",
     "express": "^4.18.2",
-    "next": "^13.5.3",
+    "next": "^13.5.6",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-countup": "^6.4.2",
